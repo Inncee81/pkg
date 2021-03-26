@@ -61,10 +61,7 @@
   "scripts": {
     "babel": "node test/rimraf-es5.js && babel lib --out-dir lib-es5",
     "lint": "eslint-klopov . || true",
-    "prepare": "npm run babel",
-    "prepublishOnly": "eslint-klopov . && npm run test:no-npm",
-    "test": "eslint-klopov . && npm run babel && node test/test.js node14 no-npm && node test/test.js node12 no-npm && node test/test.js node10 no-npm && node test/test.js host only-npm",
-    "test:no-npm": "node test/test.js host no-npm"
+    "prepare": "npm run babel"
   },
   "eslintConfig": {
     "extends": "klopov",
