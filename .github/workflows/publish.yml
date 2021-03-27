@@ -18,6 +18,7 @@ jobs:
       
   publish-npm:
     name: Publish to NPM
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
